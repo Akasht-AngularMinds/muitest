@@ -67,12 +67,8 @@ export default function Index() {
                                 fullWidth
                                 placeholder='branch'
                                 size="small"
-                                placeHolder="ysdyhsdh"
                                 displayEmpty
                             >
-                                <MenuItem value="" disabled>
-                                    Placeholder
-                                </MenuItem>
                                 <MenuItem value={10210}>10210</MenuItem>
                                 <MenuItem value={10220}>10220</MenuItem>
                                 <MenuItem value={30453}>30453</MenuItem>
@@ -80,9 +76,7 @@ export default function Index() {
                         </Grid>
                         <Grid item xs={6}>
                             <InputLabel id="demo-simple-select-label" sx={{ fontWeight: "bold" }} >Branch</InputLabel>
-
-                            <TextField 
-                            
+                            <TextField   
                                 size="small" label="store name" disabled sx={{ backgroundColor:"rgb(231, 235, 240)"}} variant="outlined" fullWidth />
                         </Grid>
                         <Grid item xs={12}>
