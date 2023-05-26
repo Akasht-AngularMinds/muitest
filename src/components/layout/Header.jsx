@@ -2,6 +2,7 @@
 import React from 'react';
 import { AppBar, Toolbar, Typography, Grid, Button, Box } from '@mui/material';
 import SettingsIcon from '@mui/icons-material/Settings';
+import MenuIcon from '@mui/icons-material/Menu';
 
 function Header() {
   return (
@@ -16,7 +17,7 @@ function Header() {
               container
               alignItems='center'
               justifyContent='space-between'
-              sx={{ px: [2, 2], py: 1 }}
+              sx={{ px: [2, 2], py: 1, display: { xs: 'none', md: 'flex' } }}
             >
               <Grid item xs={6} sm={8} md={6}>
                 <Typography component='div'>
@@ -85,6 +86,7 @@ function Header() {
                 </Box>
               </Grid>
             </Grid>
+            <MenuIcon sx={{display: {md: 'none', sm: 'flex' } }}/>
           </Toolbar>
         </AppBar>
       </Box>
